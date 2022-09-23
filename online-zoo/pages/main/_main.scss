@@ -3,9 +3,11 @@
     background-image: url(../assets/img/GiantPanda.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-size: cover;
 
     .container {
         margin: 0 auto;
+        padding-top: 86px;
         max-width: 1160px;
         position: relative;
     }
@@ -19,5 +21,64 @@
         top: 12px;
 
         background: $orange-back;
+    }
+
+    .right-side {
+        margin: 0 0 0 auto;
+        width: 500px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo {
+        margin: 0;
+        margin-bottom: 62px;
+        position: relative;
+
+
+        font-weight: 700;
+        font-size: 106px;
+        line-height: 75%;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        .extra-promo {
+            color: $yellow;
+            font-weight: 700;
+        }
+    }
+
+    .btn {
+        width: 300px;
+        margin-bottom: 100px;
+        padding: 16px;
+        background: $orange-back;
+        border: none;
+        border-radius: 25px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        &:hover {
+            cursor: pointer;
+            background: $dark-orange;
+        }
+
+        &:active {
+            background: $green;
+        }
+
+        &:disabled {
+            background: #767474;
+        }
     }
 }
