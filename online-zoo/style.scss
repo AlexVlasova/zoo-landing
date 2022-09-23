@@ -1,0 +1,17 @@
+// colors
+$orange: #FE9013;
+
+@import "pages/blocks/_header.scss";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// common styles
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    box-sizing: border-box;
+}
+
