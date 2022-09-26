@@ -90,7 +90,7 @@
     background-position: right 12px;
     background-size: auto;
 
-    padding: 140px 0 180px 0;
+    padding: 140px 0 178px 0;
 
     .container {
         margin: 0 auto;
@@ -132,5 +132,209 @@
             line-height: 120%;
         }
     }
+}
 
+// Экран со слайдером животных
+.pets {
+    position: relative;
+
+    .left-back-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/palm_foto.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+
+    .right-back-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/strelitzia.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .container {
+        position: relative;
+        width: 1322px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pets-slider {
+        width: 100%;
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .slider-arrow {
+        width: 62px;
+        height: 62px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        border: none;
+        background-color: $orange;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: $green;
+        }
+
+        &.left-slider-arrow {
+            margin-right: 20px;
+            background-image: url(../assets/img/left-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &.right-slider-arrow {
+            margin-left: 20px;
+            background-image: url(../assets/img/right-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+    .pets-list {
+        max-width: 1160px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        flex-grow: 1;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .pet-card {
+        position: relative;
+        border: 1px solid $orange;
+        flex: calc(33% - 30px) 0 1;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+        .pop-up {
+            position: absolute;
+            display: none;
+            z-index: 10;
+            padding: 11px;
+            bottom: 60px;
+            left: 20px;
+
+            background-color: #fff;
+            border: 2px solid black;
+            border-radius: 5px;
+
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #000000;
+
+            .place {
+                margin-bottom: 13px;
+            }
+
+            .watch {
+                background: #F1F3F2;
+                border-radius: 5px;
+                padding: 4px 17px;
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #4B9200;
+
+                &:hover {
+                    background: #c9f0dd;
+                }
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .pet-img {
+                border-radius: 5px;
+                transform: scale(1.1);
+            }
+
+            .pet-info {
+                display: none;
+            }
+
+            .pop-up {
+                display: block;
+                bottom: -40px;
+            }
+        }
+    }
+
+    .pet-info {
+        padding: 3px 12px 10px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pet-name {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #000000;
+        }
+
+        .pet-place {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: #000000;
+        }
+
+        .pet-icon {
+            width: 50px;
+            height: 38px;
+        }
+
+        .banana-icon {
+            background-image: url(../assets/img/banana-icon.svg);
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        .meat-icon {
+            background-image: url(../assets/img/meat-icon.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+    }
+
+    .choose-fav {
+        min-width: 298px;
+        margin-bottom: 100px;
+        background: $orange;
+        border: none;
+        border-radius: 25px;
+        padding: 16px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
 }
