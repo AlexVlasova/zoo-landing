@@ -336,5 +336,17 @@
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
+
+        &:hover {
+            background-color: $dark-orange;
+        }
+
+        &:active {
+            background-color: $green;
+        }
+
+        &:disabled {
+            background-color: $gray;
+        }
     }
 }
