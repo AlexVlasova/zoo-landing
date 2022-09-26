@@ -1,3 +1,30 @@
+.btn {
+    background: $orange-back;
+    border: none;
+    border-radius: 25px;
+    padding: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        cursor: pointer;
+        background: $dark-orange;
+    }
+
+    &:active {
+        background: $green;
+    }
+
+    &:disabled {
+        background: #767474;
+    }
+}
+
 // Экран промо с картинкой
 .main-screen {
     background-image: url(../assets/img/GiantPanda.jpg);
@@ -56,30 +83,6 @@
     .btn {
         width: 300px;
         margin-bottom: 100px;
-        padding: 16px;
-        background: $orange-back;
-        border: none;
-        border-radius: 25px;
-
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 140%;
-
-        text-transform: uppercase;
-        color: #FFFFFF;
-
-        &:hover {
-            cursor: pointer;
-            background: $dark-orange;
-        }
-
-        &:active {
-            background: $green;
-        }
-
-        &:disabled {
-            background: #767474;
-        }
     }
 }
 
@@ -324,29 +327,123 @@
     .choose-fav {
         min-width: 298px;
         margin-bottom: 100px;
-        background: $orange;
-        border: none;
-        border-radius: 25px;
-        padding: 16px;
+    }
+}
 
+// Розовый блок
+.pick-feed {
+    @include orange-grad();
+    padding: 69px 0 100px 0;
+
+    .container {
+        margin: 0 auto;
+        padding: 40px 50px 59px 100px;
+        max-width: 1160px;
+        background: rgba(253, 253, 255, 0.52);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        margin: 0;
+        padding-right: 50px;
+        margin-bottom: 30px;
+        font-size: 48px;
+        line-height: 120%;
+        color: $orange;
+    }
+
+    .big-text {
+        margin: 0;
+        margin-bottom: 40px;
+        align-self: start;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .bold-text {
+        margin: 0;
+        margin-bottom: 10px;
+        align-self: start;
         font-weight: 500;
         font-size: 16px;
-        line-height: 140%;
+        line-height: 130%;
+    }
 
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
+    .text {
+        align-self: start;
+        margin: 0;
+        margin-bottom: 60px;
+        line-height: 130%;
+    }
 
-        &:hover {
-            background-color: $dark-orange;
+    a {
+        text-decoration: none;
+        border-bottom: 1px solid $orange;
+    }
+
+    h3 {
+        padding-right: 50px;
+        margin: 0;
+        margin-bottom: 40px;
+        font-size: 36px;
+        line-height: 130%;
+    }
+
+    .btn {
+        margin-right: 50px;
+        min-width: 298px;
+    }
+
+    .doings {
+        padding-right: 50px;
+        margin-bottom: 46px;
+        display: flex;
+        justify-content: center;
+
+        .arrow {
+            flex: 69px 0 0;
+            height: 40px;
+            margin-top: 60px;
+            margin-left: 30px;
+            margin-right: 31px;
+
+            background-image: url(../assets/img/hand-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
         }
 
-        &:active {
-            background-color: $green;
+        .card {
+            flex: 168px 0 0;
+            line-height: 140%;
+
+            .pic {
+                margin-bottom: 30px;
+                border-radius: 5px;
+                border: 1px solid $orange;
+                width: 168px;
+                height: 168px;
+                background-color: #fff;
+
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
         }
 
-        &:disabled {
-            background-color: $gray;
+        .pay-card {
+            background-image: url(../assets/img/pay.svg);
+        }
+
+        .money-card {
+            background-image: url(../assets/img/zoo.svg);
+        }
+
+        .monkey-card {
+            background-image: url(../assets/img/monkey.svg);
         }
     }
 }
