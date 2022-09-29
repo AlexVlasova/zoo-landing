@@ -1,29 +1,4 @@
-.btn {
-    background: $orange-back;
-    border: none;
-    border-radius: 25px;
-    padding: 16px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-    &:hover {
-        cursor: pointer;
-        background: $dark-orange;
-    }
-
-    &:active {
-        background: $green;
-    }
-
-    &:disabled {
-        background: #767474;
-    }
-}
 
 // Экран промо с картинкой
 .main-screen {
@@ -468,12 +443,6 @@
         text-align: center;
     }
 
-    .square-btn {
-        min-width: 298px;
-        border-radius: 5px;
-        margin-bottom: 180px;
-    }
-
     .slider-bar {
         position: relative;
         margin: 0 auto;
@@ -575,5 +544,9 @@
         font-size: 15px;
         line-height: 120%;
         color: #767474;
+    }
+
+    .square-btn {
+        margin-bottom: 182px;
     }
 }
