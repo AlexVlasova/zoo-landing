@@ -4,7 +4,7 @@
     opacity: 0.9;
 }
 
-$footer-back: #111115; 
+$footer-back: #111115;
 $pink-grad: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 $text-color: #333B41;
 $orange: #FE9013;
@@ -18,6 +18,10 @@ $red: #D31414;
 
 @import "pages/blocks/header";
 @import "pages/blocks/footer";
+@import "pages/blocks/promo";
+@import "pages/blocks/history";
+@import "pages/blocks/pet_slider";
+@import "pages/blocks/pink_feed";
 @import "pages/main/main";
 @import "pages/donate/donate";
 
@@ -35,6 +39,7 @@ $red: #D31414;
 }
 
 .btn {
+    min-width: 298px;
     background: $orange-back;
     border: none;
     border-radius: 25px;
