@@ -66,10 +66,11 @@ html(lang="en")
                 .right-back-img
                 .container
                     .pets-slider
-                        button.left-slider-arrow.slider-arrow
                         ul.pets-list
+                            button.left-slider-arrow.slider-arrow
+                            button.right-slider-arrow.slider-arrow
                             li.pet-card
-                                img.pet-img.pet-img-1(src="../../assets/img/img1.jpg", alt="Giant Pandas")
+                                img.pet-img(src="../../assets/img/img1.jpg", alt="Giant Pandas")
                                 .pet-info
                                     .pet-descr
                                         .pet-name giant Pandas
@@ -80,7 +81,7 @@ html(lang="en")
                                     .place Southwest China
                                     btn.watch Whatch online
                             li.pet-card
-                                img.pet-img.pet-img-1(src="../../assets/img/img2.jpg", alt="Giant Pandas")
+                                img.pet-img(src="../../assets/img/img2.jpg", alt="Giant Pandas")
                                 .pet-info
                                     .pet-descr
                                         .pet-name Eagles
@@ -91,7 +92,7 @@ html(lang="en")
                                     .place South America
                                     btn.watch Whatch online
                             li.pet-card
-                                img.pet-img.pet-img-1(src="../../assets/img/img3.jpg", alt="Giant Pandas")
+                                img.pet-img(src="../../assets/img/img3.jpg", alt="Giant Pandas")
                                 .pet-info
                                     .pet-descr
                                         .pet-name Gorillas
@@ -102,7 +103,7 @@ html(lang="en")
                                     .place Congo
                                     btn.watch Whatch online
                             li.pet-card
-                                img.pet-img.pet-img-1(src="../../assets/img/img4.jpg", alt="Giant Pandas")
+                                img.pet-img(src="../../assets/img/img4.jpg", alt="Giant Pandas")
                                 .pet-info
                                     .pet-descr
                                         .pet-name Two-toed Sloth
@@ -112,8 +113,8 @@ html(lang="en")
                                     .name Two-toed Sloth
                                     .place South America
                                     btn.watch Whatch online
-                            li.pet-card
-                                img.pet-img.pet-img-1(src="../../assets/img/img5.jpg", alt="Giant Pandas")
+                            li.pet-card.no-visible
+                                img.pet-img(src="../../assets/img/img5.jpg", alt="Giant Pandas")
                                 .pet-info
                                     .pet-descr
                                         .pet-name cheetahs
@@ -123,8 +124,8 @@ html(lang="en")
                                     .name cheetahs
                                     .place Africa
                                     btn.watch Whatch online
-                            li.pet-card
-                                img.pet-img.pet-img-1(src="../../assets/img/img6.jpg", alt="Giant Pandas")
+                            li.pet-card.no-visible
+                                img.pet-img(src="../../assets/img/img6.jpg", alt="Giant Pandas")
                                 .pet-info
                                     .pet-descr
                                         .pet-name Penguins
@@ -134,9 +135,28 @@ html(lang="en")
                                     .name Penguins
                                     .place Antarctica
                                     btn.watch Whatch online
-
-
-                        button.right-slider-arrow.slider-arrow
+                            //- li.pet-card
+                            //-     img.pet-img(src="../../assets/img/img4.jpg", alt="Giant Pandas")
+                            //-     .pet-info
+                            //-         .pet-descr
+                            //-             .pet-name Two-toed Sloth
+                            //-             .pet-place Mesoamerica, South America
+                            //-         .pet-icon.banana-icon
+                            //-     .pop-up
+                            //-         .name Two-toed Sloth
+                            //-         .place South America
+                            //-         btn.watch Whatch online
+                            //- li.pet-card
+                            //-     img.pet-img(src="../../assets/img/img1.jpg", alt="Giant Pandas")
+                            //-     .pet-info
+                            //-         .pet-descr
+                            //-             .pet-name giant Pandas
+                            //-             .pet-place Native to Southwest China
+                            //-         .pet-icon.banana-icon
+                            //-     .pop-up
+                            //-         .name Giant Pandas
+                            //-         .place Southwest China
+                            //-         btn.watch Whatch online
                     button.btn.choose-fav choose your favorite
 
             section.pick-feed
